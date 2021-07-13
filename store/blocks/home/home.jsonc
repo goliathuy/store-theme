@@ -6,13 +6,29 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
+      "info-card#test1",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
-    ]
+    ],
+    "children": ["newsletter-form#some-newsletter"]
+  },
+
+  "info-card#test1": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2021%2F07%2F02%2Fspacex-toilet-glass-dome-SPACEXVIEW0721.jpg",
+      "headline": "SOME Clearance Sale",
+      "callToActionText": "GO DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "left"
+    }
   },
 
   "list-context.image-list#demo": {
@@ -21,11 +37,11 @@
       "height": 720,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+          "image": "https://pbs.twimg.com/media/E5Kg5cCX0Ak0Nyf.jpg",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "image": "https://assets.entrepreneur.com/content/3x2/2000/1608405878-SpaceX.png  ",
           "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
         }
       ]
@@ -46,7 +62,7 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Patata",
       "blockClass": "shelfTitle"
     }
   },
@@ -78,13 +94,21 @@
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "https://www.cnet.com/a/img/szlimGscKc1Zv0EkZ40t2oZ6FdE=/940x0/2021/06/30/878f1fca-7b6d-4b7f-bae0-143bb23449ab/51171019709-19e6fc54b3-k.jpg",
       "headline": "Clearance Sale",
       "callToActionText": "DISCOVER",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
       "textAlignment": "center"
     }
+  },
+
+  "newsletter-form#some-newsletter": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-input-name",
+      "newsletter-submit"
+    ]
   },
 
   "rich-text#question": {
